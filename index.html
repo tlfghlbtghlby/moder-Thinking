@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>المفكر المحاسبي | شركة الفكر الحديث للحلول التقنية</title>
+<meta name="description" content="المفكر المحاسبي: برنامج نقاط بيع ومحاسبة متكامل للمحلات والسوبرماركت. مبيعات، مخزن، ديون، شفتات، تقارير أرباح، نسخ احتياطي تلقائي. شركة الفكر الحديث للحلول التقنية.">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070b14;--bg2:#0d1424;--card:#111a2e;--line:#1f2b46;--tx:#e8edf7;--mut:#93a0ba;--g:#10b981;--g2:#34d399;--o:#f59e0b;--b:#3b82f6}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Tajawal,system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.8;overflow-x:hidden}
+a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
+.wrap{max-width:1180px;margin:auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:50;background:rgba(7,11,20,.85);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px}.brand img{width:40px;height:40px;border-radius:10px}
+.brand small{display:block;font-size:11px;color:var(--mut);font-weight:500;line-height:1.2}
+.links{display:flex;gap:22px;color:var(--mut);font-size:15px}.links a:hover{color:var(--g2)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:12px;font-weight:700;font-size:16px;transition:.2s;border:1px solid transparent;cursor:pointer}
+.btn.p{background:linear-gradient(135deg,var(--g),#059669);color:#fff;box-shadow:0 8px 30px -8px rgba(16,185,129,.6)}.btn.p:hover{transform:translateY(-2px)}
+.btn.s{border-color:var(--line);background:var(--card)}.btn.s:hover{border-color:var(--g)}
+.hero{position:relative;padding:80px 0 40px;text-align:center;background:radial-gradient(ellipse at 50% -10%,rgba(16,185,129,.22),transparent 60%),radial-gradient(ellipse at 90% 30%,rgba(59,130,246,.12),transparent 50%)}
+.tag{display:inline-block;padding:6px 16px;border:1px solid rgba(16,185,129,.4);color:var(--g2);border-radius:99px;font-size:14px;background:rgba(16,185,129,.08);margin-bottom:22px}
+h1{font-size:clamp(34px,6vw,64px);font-weight:900;line-height:1.25;margin-bottom:18px}
+h1 span{background:linear-gradient(90deg,var(--g2),#60a5fa);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{max-width:720px;margin:0 auto 30px;color:var(--mut);font-size:19px}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.shot{border-radius:16px;border:1px solid var(--line);overflow:hidden;background:var(--card);box-shadow:0 30px 80px -20px rgba(0,0,0,.7)}
+.bar{display:flex;gap:6px;padding:10px 14px;background:#0a1120;border-bottom:1px solid var(--line)}.bar i{width:10px;height:10px;border-radius:50%;background:#2a3856}
+.hero .shot{margin:56px auto 0;max-width:1060px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:50px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;text-align:center}.stat b{display:block;font-size:34px;color:var(--g2);font-weight:900}.stat span{color:var(--mut);font-size:14px}
+section{padding:70px 0}
+.head{text-align:center;margin-bottom:46px}.head h2{font-size:clamp(28px,4vw,42px);font-weight:900}.head p{color:var(--mut);max-width:640px;margin:10px auto 0}
+.feat{display:grid;grid-template-columns:1fr 1.15fr;gap:44px;align-items:center;margin-bottom:84px}
+.feat.rev{direction:ltr}.feat.rev>*{direction:rtl}
+.feat h3{font-size:30px;font-weight:800;margin-bottom:10px}.feat .k{color:var(--g2);font-weight:700;font-size:14px;margin-bottom:6px}
+.feat p{color:var(--mut);margin-bottom:14px}
+.feat ul{list-style:none;display:grid;gap:8px}.feat li{padding-right:28px;position:relative;font-size:15.5px}
+.feat li:before{content:"✓";position:absolute;right:0;color:var(--g2);font-weight:900}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.c{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;transition:.2s}.c:hover{border-color:var(--g);transform:translateY(-3px)}
+.c .ic{font-size:30px;margin-bottom:8px}.c h4{font-size:18px;font-weight:800;margin-bottom:4px}.c p{color:var(--mut);font-size:14.5px}
+.alt{background:var(--bg2);border-block:1px solid var(--line)}
+.modes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.modes .m{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}.modes .m div{padding:16px}.modes h4{font-weight:800;margin-bottom:2px}.modes p{color:var(--mut);font-size:14px}
+.contact{text-align:center;background:radial-gradient(ellipse at 50% 120%,rgba(16,185,129,.25),transparent 60%)}
+.phone{font-size:clamp(34px,6vw,60px);font-weight:900;letter-spacing:2px;direction:ltr;display:inline-block;margin:10px 0 24px;color:var(--g2)}
+footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:var(--mut);font-size:14px}
+.fab{position:fixed;bottom:18px;left:18px;z-index:60;display:flex;flex-direction:column;gap:10px}
+.fab a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:24px;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.reveal{opacity:0;transform:translateY(24px);transition:.7s}.reveal.in{opacity:1;transform:none}
+@media(max-width:860px){.links{display:none}.feat,.feat.rev{grid-template-columns:1fr;direction:rtl;gap:20px}.grid,.modes{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.nav-cta{display:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+ <a href="#top" class="brand"><img src="img/logo.png" alt="شعار"><div>المفكر المحاسبي<small>شركة الفكر الحديث للحلول التقنية</small></div></a>
+ <div class="links"><a href="#pos">نقطة البيع</a><a href="#stock">المخزن</a><a href="#debts">الديون</a><a href="#reports">التقارير</a><a href="#more">كل الميزات</a></div>
+ <a class="btn p nav-cta" href="tel:07723489319">📞 07723489319</a>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+ <span class="tag">برنامج نقاط بيع ومحاسبة متكامل · يعمل على الكمبيوتر والموبايل</span>
+ <h1>أدِر محلّك بالكامل <span>من شاشة واحدة</span></h1>
+ <p class="lead">«المفكر المحاسبي» برنامج عربي سريع وسهل لإدارة المبيعات والمخزن والديون والشفتات والأرباح، مع نسخ احتياطي تلقائي ومزامنة سحابية بين أجهزتك.</p>
+ <div class="cta"><a class="btn p" href="tel:07723489319">📞 اتصل بنا الآن</a><a class="btn s" href="https://wa.me/9647723489319" target="_blank" rel="noopener">💬 واتساب</a><a class="btn s" href="#pos">شاهد البرنامج</a></div>
+ <div class="shot"><div class="bar"><i></i><i></i><i></i></div><img src="img/home.webp" alt="الشاشة الرئيسية للبرنامج" fetchpriority="high"></div>
+ <div class="stats">
+  <div class="stat"><b>3</b><span>أوضاع لنقطة البيع</span></div>
+  <div class="stat"><b>24/7</b><span>مزامنة ونسخ احتياطي</span></div>
+  <div class="stat"><b>100%</b><span>واجهة عربية</span></div>
+  <div class="stat"><b>PC + 📱</b><span>ويندوز وأندرويد وويب</span></div>
+ </div>
+</div></header>
+
+<section id="pos"><div class="wrap">
+ <div class="head"><h2>نقطة بيع سريعة بثلاثة أوضاع</h2><p>اختر الطريقة التي تناسب عملك وعمّالك — وبدّل بينها بضغطة من الإعدادات.</p></div>
+ <div class="modes reveal">
+  <div class="m"><img loading="lazy" src="img/pos.webp" alt="الوضع العادي"><div><h4>الوضع العادي (مربعات)</h4><p>شبكة مواد بأسعارها مع تصنيفات، اضغط المادة لتضاف للقائمة فوراً.</p></div></div>
+  <div class="m"><img loading="lazy" src="img/classic.webp" alt="الوضع الكلاسيكي"><div><h4>الوضع الكلاسيكي</h4><p>جدول مألوف بالكراتين والقطع والتعبئة، مناسب لمن اعتاد البرامج القديمة.</p></div></div>
+  <div class="m"><img loading="lazy" src="img/list.webp" alt="وضع القائمة"><div><h4>وضع القائمة (ورقة)</h4><p>اكتب اسم المادة في السطر فتظهر المطابقات وسعرها بجانبها، Enter للاختيار والانتقال للعمود التالي.</p></div></div>
+ </div>
+ <div style="height:60px"></div>
+ <div class="feat reveal">
+  <div><div class="k">البيع السريع</div><h3>زرّان فقط: نقد وآجل</h3>
+   <p>وضع «الزرّين» يختصر البيع: Enter للنقد وCtrl+Enter للحفظ والطباعة — والاختصارات قابلة للتعديل والعكس حسب رغبتك.</p>
+   <ul><li>شريط صغير لاختيار اسم الزبون عند البيع الآجل</li><li>أسعار مفرد / جملة / جملة الجملة / سعر خاص</li><li>خصم على القائمة بمبلغ أو نسبة، وحاسبة الباقي (F5)</li><li>تحكم بحجم الجدول وعرض الورقة</li></ul></div>
+  <div class="shot"><div class="bar"><i></i><i></i><i></i></div><img loading="lazy" src="img/two.webp" alt="وضع الزرين"></div>
+ </div>
+</div></section>
+
+<section class="alt" id="stock"><div class="wrap">
+ <div class="feat reveal">
+  <div><div class="k">المخزن والمواد</div><h3>مخزن مرتب وتحت السيطرة</h3>
+   <p>أضف موادك بالباركود أو بالاسم، وتابع الكميات وأسعار الشراء والبيع لحظة بلحظة.</p>
+   <ul><li>وحدات متعددة: قطعة / كرتون / تعبئة</li><li>تنبيه بالمواد التي قاربت على النفاد</li><li>بحث عربي ذكي يتجاوز اختلاف (ة/ه) و(أ/ا) و(ى/ي)</li><li>إضافة مواد من صورة قائمة بالذكاء الاصطناعي</li><li>تقييم رأس مال المخزن وقيمته بسعر البيع</li></ul></div>
+  <div class="shot"><div class="bar"><i></i><i></i><i></i></div><img loading="lazy" src="img/inventory.webp" alt="المخزن"></div>
+ </div>
+</div></section>
+
+<section id="debts"><div class="wrap">
+ <div class="feat rev reveal">
+  <div><div class="k">الديون والزبائن</div><h3>ديونك مضبوطة ولا شيء يضيع</h3>
+   <p>حساب لكل زبون مع كشف تفصيلي، وتسديدات جزئية، وتذكير للمتأخرين بضغطة.</p>
+   <ul><li>سداد دين وإضافة دين يدوي وحذف/إلغاء أي حركة بأمان</li><li>كشف حساب لكل زبون</li><li>إرسال التذكير عبر واتساب أو تليجرام</li><li>تذكير المتأخرين عن موعد السداد</li><li>احتساب الديون القديمة</li><li>كل عملية تعرض التاريخ والوقت</li></ul></div>
+  <div class="shot"><div class="bar"><i></i><i></i><i></i></div><img loading="lazy" src="img/customers.webp" alt="الديون"></div>
+ </div>
+ <div class="feat reveal">
+  <div><div class="k">الفواتير</div><h3>سجل قوائم كامل وقابل للبحث</h3>
+   <p>كل قائمة محفوظة مع الربح والمسدّد والمتبقي، مع تعديل وإرجاع وطباعة.</p>
+   <ul><li>بحث بالمادة أو الزبون أو رقم القائمة</li><li>فلترة نقدي / آجل / مرتجع</li><li>إرجاع مواد مع تعديل المخزن تلقائياً</li><li>أرشفة القوائم القديمة</li><li>طباعة حرارية أو A4 بتصميم ملوّن</li></ul></div>
+  <div class="shot"><div class="bar"><i></i><i></i><i></i></div><img loading="lazy" src="img/invoices.webp" alt="الفواتير"></div>
+ </div>
+</div></section>
+
+<section class="alt" id="reports"><div class="wrap">
+ <div class="feat reveal">
+  <div><div class="k">التقارير والأرباح</div><h3>اعرف ربحك الحقيقي بدقة</h3>
+   <p>تقارير تحسب صافي الربح من فرق سعر الشراء والبيع، لليوم أو الأسبوع أو الشهر أو أي فترة.</p>
+   <ul><li>إجمالي المبيعات وتكلفة البضاعة وصافي الأرباح</li><li>مقارنة البيع النقدي بالآجل</li><li>أكثر المواد مبيعاً وتحقيقاً للأرباح</li><li>خصم المصروفات من الأرباح (اختياري)</li></ul></div>
+  <div class="shot"><div class="bar"><i></i><i></i><i></i></div><img loading="lazy" src="img/reports.webp" alt="التقارير"></div>
+ </div>
+ <div class="feat rev reveal">
+  <div><div class="k">الشفتات</div><h3>شفت لكل موظف ومحاسبة دقيقة</h3>
+   <p>افتح الشفت وأغلقه مع ملخص كامل: عدد القوائم، المبيعات، الأرباح، والمتوقع بالصندوق.</p>
+   <ul><li>جلسة لكل موظف (بيع وإدخال فقط أو صلاحيات كاملة)</li><li>سجل الشفتات السابقة</li><li>مبيعات وأرباح كل شفت</li><li>تقرير إغلاق الشفت</li></ul></div>
+  <div class="shot"><div class="bar"><i></i><i></i><i></i></div><img loading="lazy" src="img/shifts.webp" alt="الشفتات"></div>
+ </div>
+ <div class="feat reveal">
+  <div><div class="k">المصروفات</div><h3>سجّل كل مصروف بسهولة</h3>
+   <p>رواتب، إيجار، كهرباء… سجّلها بتصنيف وتاريخ وتابع إجمالي المصروفات بحسب الفترة.</p>
+   <ul><li>مصروفات يدوية وثابتة</li><li>فلترة اليوم / الأسبوع / الشهر</li><li>ربطها بالشفت أو خصمها من الأرباح</li></ul></div>
+  <div class="shot"><div class="bar"><i></i><i></i><i></i></div><img loading="lazy" src="img/expenses.webp" alt="المصروفات"></div>
+ </div>
+</div></section>
+
+<section id="settings"><div class="wrap">
+ <div class="feat rev reveal">
+  <div><div class="k">الإعدادات والأمان</div><h3>تحكم كامل بالبرنامج</h3>
+   <p>خصّص اسم المحل والطباعة والألوان والأسعار، وفعّل ما تحتاجه فقط.</p>
+   <ul><li>وضع نهاري وليلي وألوان قابلة للتخصيص</li><li>تصميم الفاتورة المطبوعة (ملوّن / كلاسيكي)</li><li>الطباعة المباشرة على طابعة الكاشير</li><li>سجل نشاط وصلاحيات للموظفين</li><li>نسخ احتياطي تليجرام + نسخة يومية محلية في مجلد تختاره</li></ul></div>
+  <div class="shot"><div class="bar"><i></i><i></i><i></i></div><img loading="lazy" src="img/settings.webp" alt="الإعدادات"></div>
+ </div>
+</div></section>
+
+<section class="alt" id="more"><div class="wrap">
+ <div class="head"><h2>وكل ما يحتاجه محلّك</h2><p>مجموعة متكاملة من الأدوات داخل برنامج واحد.</p></div>
+ <div class="grid">
+  <div class="c reveal"><div class="ic">☁️</div><h4>مزامنة سحابية</h4><p>بياناتك على كل أجهزتك لحظياً، مع عمل كامل بدون إنترنت ومزامنة عند عودته.</p></div>
+  <div class="c reveal"><div class="ic">🛡️</div><h4>نسخ احتياطي مزدوج</h4><p>تليجرام تلقائي + نسخة يومية على الكمبيوتر بمجلد تحدده وبحذف النسخ القديمة تلقائياً.</p></div>
+  <div class="c reveal"><div class="ic">📦</div><h4>المشتريات والموردون</h4><p>فواتير الشراء وحسابات الموردين واستلام البضاعة وتحديث الأسعار.</p></div>
+  <div class="c reveal"><div class="ic">🏷️</div><h4>العروض والخصومات</h4><p>عروض بتاريخ بداية ونهاية تُطبّق تلقائياً على القائمة.</p></div>
+  <div class="c reveal"><div class="ic">🔎</div><h4>كاميرا فحص الأسعار</h4><p>صفحة للزبون يمسح الباركود فيعرف السعر بنفسه دون تدخل الكاشير.</p></div>
+  <div class="c reveal"><div class="ic">👥</div><h4>مندوبو المبيعات</h4><p>حسابات للمندوبين ومتابعة مبيعاتهم ومستحقاتهم.</p></div>
+  <div class="c reveal"><div class="ic">💬</div><h4>واتساب وتليجرام</h4><p>أرسل كشف الحساب والفاتورة والتذكيرات للزبون مباشرة.</p></div>
+  <div class="c reveal"><div class="ic">🖨️</div><h4>طباعة احترافية</h4><p>حرارية 80mm أو A4، مع باركود وشعار واسم المحل وملاحظات.</p></div>
+  <div class="c reveal"><div class="ic">🎨</div><h4>واجهتان عصرية وكلاسيكية</h4><p>الواجهة العصرية بالبطاقات أو الكلاسيكية بالتبويبات، وشريط تحكم عائم سريع.</p></div>
+ </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+ <div class="head"><h2>جاهز لتطوير عملك؟</h2><p>تواصل معنا لنعرض عليك البرنامج ونجهّزه لمحلّك، وسنساعدك في التشغيل والتدريب.</p></div>
+ <a class="phone" href="tel:07723489319">07723489319</a>
+ <div class="cta"><a class="btn p" href="tel:07723489319">📞 اتصل الآن</a><a class="btn s" href="https://wa.me/9647723489319" target="_blank" rel="noopener">💬 راسلنا على واتساب</a></div>
+</div></section>
+
+<footer><div class="wrap">© <span id="y">2026</span> شركة الفكر الحديث للحلول التقنية — جميع الحقوق محفوظة<br><small>الصور من نسخة تجريبية ببيانات وهمية.</small></div></footer>
+
+<div class="fab"><a href="https://wa.me/9647723489319" target="_blank" rel="noopener" style="background:#25d366" aria-label="واتساب">💬</a><a href="tel:07723489319" style="background:var(--g)" aria-label="اتصال">📞</a></div>
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body></html>
