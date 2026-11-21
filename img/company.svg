@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#34d399"/><stop offset="1" stop-color="#3b82f6"/></linearGradient>
+<radialGradient id="bg" cx="50%" cy="45%" r="60%"><stop offset="0" stop-color="#0f2a3a"/><stop offset="1" stop-color="#070b14"/></radialGradient>
+<filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<polygon points="100,12 176,56 176,144 100,188 24,144 24,56" fill="url(#bg)" stroke="url(#g)" stroke-width="5" stroke-linejoin="round" filter="url(#glow)"/>
+<polygon points="100,30 160,65 160,135 100,170 40,135 40,65" fill="none" stroke="url(#g)" stroke-width="1.5" opacity=".45"/>
+<g filter="url(#glow)" stroke="url(#g)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="62,134 62,76 100,112 138,76 138,134"/>
+</g>
+<g fill="#ffffff" filter="url(#glow)"><circle cx="62" cy="76" r="7"/><circle cx="138" cy="76" r="7"/><circle cx="100" cy="112" r="8" fill="#fbbf24"/><circle cx="62" cy="134" r="5"/><circle cx="138" cy="134" r="5"/></g>
+<path d="M100 44v14M92 51h16" stroke="#fbbf24" stroke-width="3.5" stroke-linecap="round" filter="url(#glow)"/>
+</svg>
